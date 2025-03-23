@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Software Developer",
+    "description": "• Developed Pabbly ChatFlow (chatflow.pabbly.com), a WhatsApp automation platform, integrating WhatsApp Cloud APIs for real-time messaging and automated communication.\n      <br>• Built scalable applications using MERN stack, Docker, AWS EC2, and Cloudflare R2, implementing webhooks for real-time communication.\n      <br>• Created and maintained comprehensive API documentation to enable efficient integration with third-party applications and services.\n      <br>• Collaborated with cross-functional teams to deliver features on time, and align with business objectives.",
+    "date": "June 2024 - Present",
+    "jobType": "Full-time",
+    "locationType": "Onsite",
+    "company": "Magnet Brains Software Technology Pvt. Ltd.",
+    "location": "Bhopal, Madhya Pradesh, India"
+  },
+  {
+    "title": "Trainee + Intern",
+    "description": "<b> • Gained hands-on experience with the MERN stack, enhancing front-end and back-end skills.</b><br>\n      • Contributed to the development of an ERP system during the internship.<br>\n      • Gained practical knowledge of full project lifecycle execution.<br>\n      <b>     • Improved development skills through practical training and real-world application.<br>\n • Collaborated closely with teams to meet project deadlines and improve code quality.  <br>\n   ",
+    "date": " Jul 2023 - Apr 2024",
+    "jobType": "Full-time",
+    "locationType": "Onsite",
+    "company": "Cybrom Technology Pvt Ltd ",
+    "location": "Bhopal, Madhya Pradesh, India"
+  }
+]

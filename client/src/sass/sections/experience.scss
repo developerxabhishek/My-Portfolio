@@ -1,0 +1,249 @@
+#workExperience {
+  padding: 0px 0px 25px 0px;
+  @include applyThemeColors();
+  padding-bottom: 15rem;
+
+  .fullWidth {
+    width: 100%;
+    display: table;
+    float: none;
+    padding: 0;
+    height: 100%;
+    position: relative;
+  }
+
+  .experienceDetails {
+    font-size: 18px;
+    margin: 0.5em 0 0;
+    font-family: "Source Sans Pro", serif;
+    text-align: justify;
+    @include respond(phone) {
+      text-align: left;
+    }
+  }
+
+  .faPra {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 70px;
+    vertical-align: middle;
+    color: white;
+    line-height: 150px;
+  }
+
+  .date {
+    color: #bfc3c7;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    i {
+      margin-right: 8px;
+      vertical-align: top;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  .exp-icon {
+    width: 150px;
+    height: 150px;
+    top: 3%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    color: #151515;
+    background: linear-gradient(
+      135deg,
+      $secondary-color 0%,
+      $primary-color 100%
+    );
+    border-radius: 50%;
+    text-align: center;
+    left: 8%;
+    margin: 0 0 0 -25px;
+    z-index: 5;
+  }
+
+  .exp-timeline {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin: 60px 30px 0 0;
+    @include respond(phone) {
+      margin-inline: 30px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 3%;
+      bottom: 0;
+      width: 10px;
+      background: linear-gradient(
+        135deg,
+        $secondary-color 0%,
+        $primary-color 100%
+      );
+      left: 11.5%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      width: 45px;
+      height: 35px;
+      position: absolute;
+      bottom: 0;
+      left: calc(11% - 10px);
+      transform: translateY(160%);
+      background: linear-gradient(
+        135deg,
+        $primary-color 0%,
+        $secondary-color 100%
+      );
+      border-radius: 50%;
+    }
+
+    > li {
+      margin-bottom: 70px;
+      position: relative;
+
+      .exp-label {
+        margin: 0 0 15px 25%;
+        background: linear-gradient(
+          135deg,
+          $secondary-color 0%,
+          $primary-color 100%
+        );
+        color: #fff;
+        padding: 30px;
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.4;
+        font-family: "Open Sans";
+        position: relative;
+        border-radius: 5px;
+        min-height: 150px;
+
+        &:after {
+          right: 100%;
+          content: " ";
+          height: 15px;
+          width: 10px;
+          position: absolute;
+          pointer-events: none;
+          background: linear-gradient($primary-color 0%, $secondary-color 100%);
+          clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+          @include respond(tab-port) {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            width: 19px;
+            top: -15px !important;
+          }
+          top: 70px;
+        }
+
+        h3 {
+          margin-top: 0px;
+          color: white;
+          font-size: 20px;
+          margin-bottom: 5px;
+          padding: 0 0 10px 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
+          @include respond(phone) {
+            font-size: 18px;
+            margin-top: 5px;
+          }
+        }
+
+        h4,
+        h5 {
+          opacity: 0.7;
+          color: rgba(255, 255, 255, 1);
+          letter-spacing: 0px;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 18px;
+          line-height: 1.2em;
+          font-weight: 600;
+          padding: 0;
+          padding-bottom: 10px;
+          margin: 0;
+          text-align: left;
+          @include respond(phone) {
+            font-size: 15px;
+          }
+
+          i {
+            margin-right: 5px;
+            vertical-align: middle;
+            @include respond(phone) {
+              font-size: 15px;
+            }
+          }
+        }
+
+        h5 {
+          font-size: 14px;
+        }
+      }
+    }
+
+    @include respond(tab-port) {
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+      > li {
+        .exp-label {
+          margin: 30px 0 70px 0;
+          padding: 50px 30px 30px 30px;
+          font-weight: 400;
+          font-size: 95%;
+          float: left;
+          &:after {
+            top: -20px;
+          }
+        }
+
+        .exp-icon {
+          position: relative;
+          left: auto;
+          margin: 0px 5px 0 0px;
+        }
+
+        &:nth-child(even) {
+          .exp-icon {
+            float: right;
+          }
+          .exp-label:after {
+            right: 65px;
+          }
+        }
+
+        &:nth-child(odd) {
+          .exp-icon {
+            left: auto;
+          }
+          .exp-label:after {
+            left: 65px;
+          }
+        }
+      }
+    }
+  }
+}
